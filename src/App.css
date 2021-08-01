@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+body {
+	background: black;
+}
+
+.gallery {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.gallery-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.gallery-item__img {
+    height: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+@media (min-width: 800px) {
+	.gallery-item {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.gallery-item {
+		width: 33%;
+	}
+}
+
